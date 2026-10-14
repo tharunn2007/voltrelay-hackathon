@@ -1,12 +1,54 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
+#Python cache and compiled files
+pycache/
+*.py[cod]
+#Virtual environments
+.venv/
+venv/
+env/
+
+#Build artifacts
 build/
 dist/
+*.egg-info/
 wheels/
-*.egg-info
 
-# Virtual environments
-.venv
-data/
-.ipynb_checkpoints/
+#Jupyter Notebook
+**/.ipynb_checkpoints/
+
+#Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+
+#IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+#Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+#Testing and linting
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+#Generated analytics outputs
+outputs/
+reports/generated/
+artifacts/
+
+#Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Large hackathon datasets — keep local, outside normal Git history
+/data/swap_events.csv
+/data/station_hourly_status.csv
