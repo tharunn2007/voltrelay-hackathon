@@ -49,6 +49,6 @@ artifacts/
 *.sqlite3
 *.db
 
-# Large hackathon datasets — keep local, outside normal Git history
-/data/swap_events.csv
-/data/station_hourly_status.csv
+# Hackathon datasets — download from the official source
+/data/*.csv
+/data/.ipynb_checkpoints/
